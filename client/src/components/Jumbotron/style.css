@@ -1,4 +1,12 @@
 .jumbotron {
-  min-height: 300px;
-  padding-top: 100px;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: darkblue;
+  opacity: 0.73;
 }

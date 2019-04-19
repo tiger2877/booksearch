@@ -68,7 +68,7 @@ class Search extends React.Component {
                     <Jumbotron style={{ backgroundImage: "url(/images/books.jpg)" }}>
                         <Container>
                             <h1>(React) Google Books Search</h1>
-                            <h6>Search for and Save Books of Interest</h6>
+                            <h4>Search for and Save Books of Interest</h4>
                         </Container>
                     </Jumbotron>
                     <Container>
