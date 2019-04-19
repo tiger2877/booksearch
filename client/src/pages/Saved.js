@@ -29,7 +29,7 @@ class Saved extends React.Component {
             });
     }
 
-    handleDelete(id) {
+    handleDelete = id => {
         API.deleteBook(id)
             .then(res => {
                 this.getBooks();
@@ -52,17 +52,17 @@ class Saved extends React.Component {
         return (
             <div>
                 <Nav/>
-                <div className="pb-5">
+                <div>
                     <Jumbotron style={{ backgroundImage: "url(/images/books.jpg)" }}>
                         <Container>
-                            <h1><i className="fab fa-react"></i> <i className="fab fa-google"></i> Books Search</h1>
-                            <h6>Search for and Save Books of Interest</h6>
+                            <h1>(React) Google Books Search</h1>
+                            <h4>Search for and Save Books of Interest</h4>
                         </Container>
                     </Jumbotron>
                     <Container>
                         <Row>
-                            <Col sm={12} className="text-left">
-                                <h2><i className="fas fa-save"></i> SAVED BOOKS</h2>
+                            <Col size="md-12">
+                                <h4>Saved Books</h4>
                             </Col>
                         </Row>
                         <Row>

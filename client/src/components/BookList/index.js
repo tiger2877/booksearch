@@ -2,7 +2,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import Button from "../Button";
 
 class BookList extends React.Component {
     render() {
@@ -11,25 +11,27 @@ class BookList extends React.Component {
                 <Card>
                     <Card.Body>
                         <Row>
-                            <Col sm={8}>
-                                <Card.Title>{this.props.title}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">
-                                    {this.props.authors ? this.props.authors.join(', ') : 'N/A'}
-                                </Card.Subtitle>
+                            <Col size="xs-8 sm-9">
+                                <h3>{this.props.title}</h3>
+                                <p>Author:{this.props.authors ? this.props.authors.join(', ') : 'N/A'}</p>
                             </Col>
-                            <Col sm={4} className="text-right">
-                                <Button variant="secondary" type="button" className="pr-2" href={this.props.link ? this.props.link : '#'} target="_blank"><i className="fas fa-eye"></i></Button>
-                                        <Button variant="secondary" type="button" onClick={() => this.props.onSelect()}><i className={`fas ${this.props.buttonText}`}></i></Button>
+                            <Col size="xs-4 sm-2">
+                                <a href={this.props.link ? this.props.link : '#'} role="button" className="badge badge-info">
+                                View
+                                </a>
+                                
                             </Col>
                         </Row>
                         <Row>
-                            <Col sm={3}>
+                            <Col size="xs-4 sm-2">
                                 <img src={this.props.image ? this.props.image : ""} alt={this.props.title} />
                             </Col>
-                            <Col sm={9}>
-                                <Card.Text>
-                                    {this.props.description ? this.props.description : 'N/A'}
-                                </Card.Text>
+                            <Col size="xs-8 sm-9">
+                                {this.props.description ? this.props.description : 'N/A'}
+                                <br />
+                                <Button role="button" className="btn btn-danger btn-sm" onClick={() => this.props.onSelect()}>
+                                Save
+                                </Button>   
                             </Col>
                         </Row>
                     </Card.Body>
