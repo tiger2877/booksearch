@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Container, Row, Col } from "../components/Grid";
 import API from '../utils/API';
 import Nav from '../components/Nav';
 import Jumbotron from '../components/Jumbotron';
