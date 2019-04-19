@@ -7,7 +7,7 @@ import Button from "../Button";
 class BookList extends React.Component {
     render() {
         return (
-            <Col sm={12} className="card-wrapper">
+            <Col size="md-12">
                 <Card>
                     <Card.Body>
                         <Row>
@@ -19,7 +19,6 @@ class BookList extends React.Component {
                                 <a href={this.props.link ? this.props.link : '#'} role="button" className="badge badge-info">
                                 View
                                 </a>
-                                
                             </Col>
                         </Row>
                         <Row>

@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Search from './pages/Search';
-import Saved from './pages/Saved';
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
 import Footer from "./components/Footer";
 
