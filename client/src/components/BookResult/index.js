@@ -20,7 +20,7 @@ class BookResult extends React.Component {
                     <p>{this.props.children}</p>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={this.props.onHide}>Close</Button>
+                <Button role="button" className="btn btn-info btn-sm" onClick={this.props.onHide}>Close</Button>
                 </Modal.Footer>
             </Modal>
         );

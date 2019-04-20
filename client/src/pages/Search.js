@@ -53,6 +53,7 @@ class Search extends React.Component {
         API.saveBook(book)
             .then(res => {
                 console.log(res);
+                this.setState({showSaved: true});
             }).catch(err => {
                 console.log(err);
                 this.setState({showError: true});

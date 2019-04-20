@@ -13,7 +13,7 @@ function Nav() {
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link
-              to="/"
+              to="/search"
               className={
                 window.location.pathname === "/" || window.location.pathname === "/"
                   ? "nav-link active"
@@ -23,7 +23,7 @@ function Nav() {
               Search
             </Link>
           </li>
-         
+
           <li className="nav-item">
             <Link
               to="/saved"
