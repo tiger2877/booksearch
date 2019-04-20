@@ -14,11 +14,15 @@ module.exports = {
         console.log(req.body);
         db.Book
             .create(req.body)
-            .then(dbModel => {
-                req.io.emit('saved book', req.body.title);
-                res.json(dbModel)
-            }).catch(err => res.status(422).json(err));
+            .then(dbModel => res.json(dbModel))
+            .catch(err => res.status(422).json(err));
     },
+    update: function(req, res) {
+        db.Book
+          .findOneAndUpdate({ _id: req.params.id }, req.body)
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err));
+      },    
     deleteBook: (req, res) => {
         db.Book
             .findById({ _id: req.params.id })
