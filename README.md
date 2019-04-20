@@ -23,9 +23,7 @@ The book search should have each of the following fields:
 See live demo here: [demo](https://arcane-wave-55794.herokuapp.com/)
 - - -
 ### Screenshots
-```
-* `concert-this`
-![concert-this](https://github.com/tiger2877/liri-node-app/blob/master/screenshots/concert-this-new.jpg)
+
 * `Screenshot1`
 ![mainpage](https://github.com/tiger2877/booksearch/blob/master/client/public/images/snapshot1.JPG)
 * `Screenshot2`
