@@ -20,6 +20,7 @@ The book search should have each of the following fields:
 
 * Creating `documents` in your `books` collection similar to the following:
 
+See live demo here: [demo](https://arcane-wave-55794.herokuapp.com/)
 - - -
 
 **Have Fun!**
