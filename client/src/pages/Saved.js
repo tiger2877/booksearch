@@ -27,7 +27,7 @@ class Saved extends React.Component {
             });
     }
 
-    handleDelete = id => {
+    deleteBook = id => {
         API.deleteBook(id)
             .then(res => {
                 this.getBooks();
@@ -73,7 +73,7 @@ class Saved extends React.Component {
                                     image={book.image}
                                     description={book.description}
                                     buttonText="fa-trash-alt"
-                                    onSelect={() => this.handleDelete(book.description)}
+                                    onSelect={() => this.deleteBook(book._id)}
                                 />
                             )}
                         </Row>
