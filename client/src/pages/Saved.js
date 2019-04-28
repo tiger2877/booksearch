@@ -73,7 +73,7 @@ class Saved extends React.Component {
                                     image={book.image}
                                     description={book.description}
                                     buttonText="fa-trash-alt"
-                                    onSelect={() => this.handleDelete(book._id)}
+                                    onSelect={() => this.handleDelete(book.description)}
                                 />
                             )}
                         </Row>
